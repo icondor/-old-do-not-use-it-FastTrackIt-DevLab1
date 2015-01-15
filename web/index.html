@@ -63,14 +63,14 @@ FastTrackIT 2015
 
                  if(keySuccess=="false") {
                      if (keyHint == "higher")
-                         document.getElementById("serverResponse").innerText = "WRONG, Try a Higher one!";
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher one!";
                      else if (keyHint == "lower")
-                         document.getElementById("serverResponse").innerText = "WRONG, Try a Lower one!";
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower one!";
                  }
                  else
                  if(keySuccess=="true")
                  {
-                     document.getElementById("serverResponse").innerText = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
+                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
                  }
              }
          }
