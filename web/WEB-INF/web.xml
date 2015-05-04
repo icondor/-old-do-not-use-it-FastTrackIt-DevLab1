@@ -10,9 +10,20 @@
 
     </servlet>
 
+    <servlet>
+        <servlet-name>ToDoList</servlet-name>
+        <servlet-class>org.fasttrackit.dev.lesson1.numgenerator.servlet.ToDoListServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>NumGenServlet</servlet-name>
         <url-pattern>/NumGenServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ToDoList</servlet-name>
+        <url-pattern>/ToDoList</url-pattern>
     </servlet-mapping>
 
 </web-app>
