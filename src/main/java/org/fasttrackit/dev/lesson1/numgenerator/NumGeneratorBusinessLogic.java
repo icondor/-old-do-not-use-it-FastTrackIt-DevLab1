@@ -16,7 +16,7 @@ FastTrackIT 2015
 
 public class NumGeneratorBusinessLogic {
 
-    private static final int MAXNUMBER = 10;
+    private static final int MAX_NUMBER = 10;
 
     private boolean isFirstTime = true;
     private boolean successfulGuess;
@@ -52,7 +52,7 @@ public class NumGeneratorBusinessLogic {
 
     public boolean determineGuess(int guessNumber){
         if (isFirstTime) {
-            generatedNumber = NumGenerator.generate(MAXNUMBER);
+            generatedNumber = NumGenerator.generate(MAX_NUMBER);
             System.out.println("gennr:"+generatedNumber);
             isFirstTime = false;
         }
